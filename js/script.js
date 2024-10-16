@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < player.cards.length; i++) {
             let card = player.cards[i];
             let cardImage = document.createElement("img");
-            cardImage.src = "cards/" + card + ".png";
+            cardImage.src = "images/" + card + ".png";
             cardImage.alt = card;
             cardsEl.appendChild(cardImage);
         }
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < dealer.cards.length; i++) {
             let card = dealer.cards[i];
             let cardImage = document.createElement("img");
-            cardImage.src = "cards/" + card + ".png";
+            cardImage.src = "images/" + card + ".png";
             cardImage.alt = card;
             dealerEl.appendChild(cardImage);
         }
