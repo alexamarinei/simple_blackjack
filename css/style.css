@@ -1,0 +1,112 @@
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-image: url("images/table.jpg");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 48px;
+    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 10px;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px black;
+}
+
+#cards-el, #dealer-el {
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#cards-el img, #dealer-el img {
+    width: 120px;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+#cards-el img:hover, #dealer-el img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    color: #ffffff;
+    width: 180px;
+    background: linear-gradient(145deg, #016f32, #02c39a);
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #029d71;
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+#sum-el, #player-el {
+    font-size: 24px;
+    margin: 10px 0;
+    text-shadow: 1px 1px 4px #000;
+}
+
+#player-el {
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border:none;
+    background-color:#334155; 
+    color:#fff;
+}
+.input-container input:focus {
+    outline: none; 
+    box-shadow: none;
+}
+
+#game-area {
+    display: none; 
+}
